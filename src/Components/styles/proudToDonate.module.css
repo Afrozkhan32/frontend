@@ -1,0 +1,112 @@
+/* General Container Styling */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 5% 2%;
+  position: relative;
+  background: linear-gradient(135deg, #6e8efb, #a777e3);
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Header Styling */
+.header {
+  font-family: "Georgia", Times, "Times New Roman", serif;
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  padding: 1% 0;
+}
+
+/* Active Image Styling */
+.myactive {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Caption Styling */
+.caption {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 42px;
+  font-weight: bold;
+  font-family: "Georgia", Times, "Times New Roman", serif;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Text Description Styling */
+.text {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+}
+
+/* Responsive Design */
+@media (max-width: 1125px) {
+  .caption {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 935px) {
+  .text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 460px) {
+  .caption {
+    font-size: 28px;
+  }
+  .text {
+    font-size: 18px;
+    padding: 8px 15px;
+  }
+}
+
+/* Animation Effects */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.mynone {
+  display: none;
+  animation: fadeOut 1s ease-in-out;
+}

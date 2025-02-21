@@ -1,0 +1,88 @@
+/* Pagination Section */
+.paginateSection {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background: #f8f9fa;
+  border-radius: 12px;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 8px;
+  padding: 10px;
+  margin: 10px;
+  overflow-x: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(21, 215, 180, 1) #ddd;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Pagination List */
+.ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Pagination Buttons */
+.ul li {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px solid turquoise;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  color: #333;
+}
+
+.ul li:hover {
+  background-color: rgba(21, 215, 180, 0.8);
+  color: #fff;
+}
+
+.active {
+  background-color: rgba(21, 215, 180, 1) !important;
+  border-color: turquoise !important;
+  color: #fff !important;
+}
+
+.inactive {
+  border-color: turquoise !important;
+  color: #333 !important;
+}
+
+/* Scrollable Container */
+.scroll {
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Custom Scrollbar */
+.nav::-webkit-scrollbar {
+  height: 8px;
+}
+
+.nav::-webkit-scrollbar-track {
+  background: #ddd;
+  border-radius: 10px;
+}
+
+.nav::-webkit-scrollbar-thumb {
+  background: rgba(21, 215, 180, 1);
+  border-radius: 10px;
+}
+
+.nav::-webkit-scrollbar-thumb:hover {
+  background: rgba(21, 215, 180, 0.8);
+}

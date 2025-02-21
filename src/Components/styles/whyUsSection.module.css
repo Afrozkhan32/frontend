@@ -1,0 +1,76 @@
+/* General Styling */
+.whyUs {
+  padding: 6% 8% 2% 10%;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+.header {
+  padding-bottom: 2%;
+  font-family: "Playfair Display", Georgia, serif;
+  font-size: 50px;
+  font-weight: bold;
+  color: #15d7b4;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.para {
+  line-height: 1.8;
+  font-size: 16px;
+  color: #555;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.image {
+  border: 1.2vw solid rgba(21, 215, 180, 1);
+  z-index: 1;
+  width: 100%;
+  image-rendering: pixelated;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+/* Desktop View */
+@media only screen and (min-width: 1000px) {
+  .image {
+    height: auto;
+    max-height: 125%;
+    position: relative;
+    bottom: 10%;
+    right: 8%;
+  }
+}
+
+/* Tablet View */
+@media only screen and (min-width: 768px) and (max-width: 1000px) {
+  .image {
+    height: auto;
+    max-height: 80%;
+    position: relative;
+    top: 10%;
+    right: 5%;
+  }
+}
+
+/* Mobile View */
+@media only screen and (max-width: 767px) {
+  .image {
+    margin: 5% auto;
+    max-width: 90%;
+    max-height: 80%;
+  }
+  .header {
+    font-size: 40px;
+  }
+  .para {
+    font-size: 14px;
+  }
+}

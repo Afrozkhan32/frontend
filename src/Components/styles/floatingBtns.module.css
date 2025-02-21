@@ -1,0 +1,109 @@
+/* Container Styling */
+.container {
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+  z-index: 999;
+  transition: all 300ms ease-in-out;
+  text-align: right;
+}
+
+/* Text Styling */
+.text {
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  overflow: hidden;
+  margin: 0;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Icon Styling */
+.ShareIcon, .DonateIcon {
+  position: absolute;
+  right: 0;
+  transition: all 300ms ease-in-out;
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+.ShareIcon {
+  bottom: 18%;
+}
+.DonateIcon {
+  bottom: 8%;
+}
+
+@media only screen and (max-height: 500px) {
+  .ShareIcon {
+    bottom: 22%;
+  }
+  .DonateIcon {
+    bottom: 5%;
+  }
+}
+
+/* Show and Hide Animations */
+.show {
+  opacity: 1;
+  width: 150px;
+  transition: all 300ms ease-in-out;
+}
+.hide {
+  width: 0;
+  opacity: 0;
+  transition: all 300ms ease-in-out;
+}
+
+/* Button Styling */
+.btn {
+  text-decoration: none;
+  background: linear-gradient(135deg, #15d7b4, #0b7460);
+  color: white;
+  margin: 10px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: none;
+  font-weight: bold;
+  transition: all 300ms ease-in-out;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #13c6a3, #095f4e);
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Styling */
+.img {
+  width: 32px;
+  height: 32px;
+  transition: transform 300ms ease-in-out;
+}
+.img:hover {
+  transform: scale(1.1);
+}
+
+/* Share Section */
+.share {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: rgba(21, 215, 180, 0.8);
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+  transition: all 300ms ease-in-out;
+}
+
+.share:hover {
+  background-color: rgba(21, 215, 180, 1);
+  transform: scale(1.1);
+}

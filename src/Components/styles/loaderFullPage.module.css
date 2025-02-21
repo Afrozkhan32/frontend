@@ -1,0 +1,22 @@
+.fullpage {
+  position: fixed;
+  z-index: 1000;
+  inset: 0; /* Shorthand for top, right, bottom, left */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  backdrop-filter: blur(10px); /* Subtle blur effect */
+}
+
+.fullpage-content {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(20px);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  color: white;
+  max-width: 90%;
+  width: 500px;
+}

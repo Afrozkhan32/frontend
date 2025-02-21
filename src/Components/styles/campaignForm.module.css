@@ -1,0 +1,38 @@
+.form {
+  padding: 3% !important;
+  margin: 3% 18% 5% 18% !important;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.title {
+  text-align: center;
+  font-family: Georgia, Times, "Times New Roman", serif;
+  font-size: 35px;
+  font-weight: bolder;
+  color: #333;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.btn {
+  background-color: rgba(21, 215, 180, 1);
+  border: none;
+  display: block;
+  margin: auto;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+  background-color: rgb(11, 146, 121);
+  transform: scale(1.05);
+}

@@ -1,0 +1,126 @@
+/* Footer Styles */
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #003366, #001f4d);
+  color: white;
+  height: auto;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo Section */
+.left {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  width: 150px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.caption {
+  font-family: 'Georgia', serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Links Section */
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin: 1.5rem 0;
+}
+
+.link {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.link:hover {
+  color: #f39c12;
+  text-decoration: underline;
+}
+
+/* Social Media Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 1rem;
+}
+
+.social-icon {
+  background-color: #eceeef;
+  color: #818a91;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icon:hover {
+  color: white;
+}
+
+.facebook:hover {
+  background-color: #3b5998;
+}
+
+.linkedin:hover {
+  background-color: #007bb6;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 2rem;
+  padding-top: 1rem;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  .left, .middle, .right {
+    flex: 1;
+  }
+
+  .middle {
+    text-align: center;
+  }
+
+  .right {
+    text-align: right;
+  }
+}

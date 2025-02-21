@@ -1,0 +1,53 @@
+/* General Styles */
+.container {
+  text-align: center;
+  padding: 3% !important;
+  margin: 3% 8% 5% 8% !important;
+  background: linear-gradient(135deg, #ffffff, #e6e6e6);
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.container:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 767px) {
+  .container {
+    margin: 3% 2% !important;
+    padding: 5% !important;
+  }
+}
+
+/* Image Styling */
+.image {
+  padding-bottom: 3%;
+  image-rendering: crisp-edges;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image:hover {
+  transform: scale(1.05);
+}
+
+/* Text Styling */
+.text {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 40px;
+  font-weight: bold;
+  color: #222;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 767px) {
+  .text {
+    font-size: 30px;
+  }
+}

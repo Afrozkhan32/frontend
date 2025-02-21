@@ -1,0 +1,104 @@
+:root {
+  --scrolled-bg: rgba(255, 255, 255, 0.9);
+  --scrolled-text: #b30d3a;
+  --nav-text: white;
+  --hover-color: #ff4d6d;
+  --transition-speed: 0.4s ease-in-out;
+}
+
+.bodyPadding {
+  height: 70px;
+  width: 100%;
+}
+
+.title {
+  height: 70px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.brand {
+  padding: 0;
+  height: 70px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+
+.brand img {
+  padding: 0;
+  margin: 0;
+  height: 70px;
+}
+
+.navbar {
+  color: var(--nav-text);
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  transition: var(--transition-speed);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 0 20px;
+  font-weight: 600;
+  color: var(--nav-text);
+  transition: var(--transition-speed);
+  position: relative;
+}
+
+li a:hover {
+  color: var(--hover-color);
+}
+
+li a::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: var(--hover-color);
+  bottom: 15px;
+  left: 0;
+  transform: scaleX(0);
+  transition: var(--transition-speed);
+}
+
+li a:hover::after {
+  transform: scaleX(1);
+}
+
+.notscrolled {
+  color: var(--nav-text);
+}
+
+.scrolled {
+  background-color: var(--scrolled-bg);
+  border-bottom-left-radius: 5% 8%;
+  border-bottom-right-radius: 5% 8%;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+  color: var(--scrolled-text);
+}

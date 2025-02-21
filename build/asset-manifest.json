@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e8970afe.css",
+    "main.js": "/static/js/main.96f2bb3b.js",
+    "static/media/aboutUs-iiitm.png": "/static/media/aboutUs-iiitm.3472787a1d03417b5abf.png",
+    "static/media/RotaractIcon.png": "/static/media/RotaractIcon.b0200681aeb39afde3bc.png",
+    "static/media/nobleCause.jpg": "/static/media/nobleCause.86bfed4d54b18b623f23.jpg",
+    "static/media/proudToDonate1.jpg": "/static/media/proudToDonate1.a45624d16d1cb220352f.jpg",
+    "static/media/whyUsSection-happyKids.jpg": "/static/media/whyUsSection-happyKids.75c617f852ebeeb986ab.jpg",
+    "static/media/background-holdTogether.jpg": "/static/media/background-holdTogether.14cfde7e31ec6d22aa6d.jpg",
+    "static/media/proudToDonate2.jpg": "/static/media/proudToDonate2.84366a8a2dbdccf6af09.jpg",
+    "static/media/proudToDonate3.jpg": "/static/media/proudToDonate3.9469690603e3b7753996.jpg",
+    "static/media/404.jpg": "/static/media/404.68ef6b932c3ba5f2a762.jpg",
+    "static/media/donateIcon.png": "/static/media/donateIcon.a50791610b4efe2e457f.png",
+    "index.html": "/index.html",
+    "main.e8970afe.css.map": "/static/css/main.e8970afe.css.map",
+    "main.96f2bb3b.js.map": "/static/js/main.96f2bb3b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e8970afe.css",
+    "static/js/main.96f2bb3b.js"
+  ]
+}
